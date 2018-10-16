@@ -13,8 +13,6 @@ Icon
 
 # Thumbnails
 ._*
-*.[oa]
-*~
 
 # Files that might appear in the root of a volume
 .DocumentRevisions-V100
@@ -33,9 +31,16 @@ Temporary Items
 .apdisk
 
 ### VisualStudioCode ###
-.vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
 
 # End of https://www.gitignore.io/api/macos,visualstudiocode
 
 # Custom rules (everything added below won't be overriden by 'Generate .gitignore File' if you use 'Update' option)
-
+.vscode
+*.[oa]
+*~
