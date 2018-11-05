@@ -9,9 +9,9 @@ private:
     int _pos;
     int _size;
     T* _elements;
-
-    ring(const ring& other){}
-    ring& operator=(const ring& other){}
+    
+    ring(const ring& other) = delete;
+    ring& operator=(const ring& other) = delete;
 
 public:
     class iterator;
