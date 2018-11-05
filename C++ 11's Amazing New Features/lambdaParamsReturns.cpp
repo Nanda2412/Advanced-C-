@@ -124,7 +124,7 @@ int main(int argc, char const *argv[])
     int const nu = 0;
 
     Base* ba = new Derived();
-    Derived* der = dynamic_cast<Derived*>(ba); // this works on if classes have a polymorphic relationship
+    Derived* der = dynamic_cast<Derived*>(ba); // this works only if classes have a polymorphic relationship
                                                // if 'ba' doesn't point to the type it's checking for then the check returns NULL.
 
     if(der){
